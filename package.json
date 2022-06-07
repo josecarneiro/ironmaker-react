@@ -5,8 +5,14 @@
     "type": "git",
     "url": "https://github.com/josecarneiro/ironmaker-react.git"
   },
+  "scripts": {
+    "test:ironmaker-react": "npx create-react-app tmp --template file:./packages/ironmaker-react"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=14"
+  },
+  "devDependencies": {
+    "lerna": "^5.0.0"
   }
 }
