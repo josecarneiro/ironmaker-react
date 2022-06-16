@@ -1,13 +1,16 @@
 {
   "name": "ironmaker-react-templates",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/josecarneiro/ironmaker-react.git"
   },
   "scripts": {
     "publish": "lerna publish",
-    "test:ironmaker-react": "npx create-react-app tmp --template file:./packages/ironmaker-react"
+    "test:ironmaker-react": "rm -rf tmp && npx create-react-app tmp --template file:./packages/ironmaker-react",
+    "test:ironmaker-react-authentication": "rm -rf tmp && npx create-react-app tmp --template file:./packages/ironmaker-react-authentication",
+    "test-remote:ironmaker-react": "rm -rf tmp && npx create-react-app tmp --template ironmaker-react",
+    "test-remote:ironmaker-react-authentication": "rm -rf tmp && npx create-react-app tmp --template ironmaker-react-authentication"
   },
   "license": "MIT",
   "engines": {
